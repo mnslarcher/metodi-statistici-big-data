@@ -1,3 +1,6 @@
+import numbers
+
+
 def fibonacci(n):
     """Restituisce l'n-esimo numero della sucessione di Fibonacci.
 
@@ -23,3 +26,27 @@ def fibonacci(n):
             return 1
         else:
             return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+def fibonacci_gen():
+    """Sucessione di Fibonacci.
+
+    Vedere https://it.wikipedia.org/wiki/Successione_di_Fibonacci.
+
+    Returns
+    -------
+    fib_gen : generator
+        Generatore della sucessione di Fibonacci.
+    """
+    f1, f2 = 1, 1
+    it = 0
+
+    while True:
+        if it < 2:
+            it += 1
+            yield 1
+        else:
+            f3 = f1 + f2
+            f1 = f2
+            f2 = f3
+            yield f3
