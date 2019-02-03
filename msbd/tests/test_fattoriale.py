@@ -1,5 +1,6 @@
 from ..matematica import fattoriale
 import math
+import pytest
 
 
 def test_fattoriale_value_error_se_non_intero():
