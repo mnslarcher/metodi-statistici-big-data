@@ -13,6 +13,8 @@ def fattoriale(n):
     fat : int
         Fattoriale di n.
     """
+
+    # TODO implementare questa funzione
     raise NotImplementedError
 
 
@@ -26,4 +28,6 @@ def fattoriale_gen():
     fat_gen : generator
         Generatore dei fattoriali dei numeri interi a partire da 0.
     """
+
+    # TODO implementare questa funzione
     raise NotImplementedError
