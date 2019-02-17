@@ -33,14 +33,56 @@ class RegressioneLineare():
             X = np.c_[np.ones(len(X)), X]
 
         # TODO: stimare i coefficienti con il metodo dei minimi quadrati
+        #       ordinari
+        # ============== YOUR CODE HERE ==============
         self.coef_ = None
         raise NotImplementedError
+        # ============================================
 
         if self.fit_intercept:
             self.intercept_ = self.coef_[0]
             self.coef_ = self.coef_[1:]
         else:
             self.intercept_ = 0
+
+        return self
+
+    def partial_fit(self, x, y):
+        if self.fit_intercept:
+            x = np.hstack([1, x])
+
+        # trasformo x in vettore colonna per coerenza con il libro
+        x = x.reshape(-1, 1)
+
+        if not hasattr(self, 'n_partial_fit_'):
+            self.n_partial_fit_ = 0
+            self._p = len(x)
+            self._W = np.zeros((self._p, self._p))
+            self._u = np.zeros((self._p, 1))
+            self._beta = np.zeros((self._p, 1))
+
+        self.n_partial_fit_ += 1
+
+        if self.n_partial_fit_ <= self._p:
+            self._W += x.dot(x.T)
+            self._u += x * y
+
+            if self.n_partial_fit_ == self._p:
+                self._V = np.linalg.inv(self._W)
+                self._beta = self._V.dot(self._u)
+        else:
+            # TODO: completare l'algorimo di stima dei minimi quadrati
+            #       ricorsivi
+            # ============== YOUR CODE HERE ==============
+            raise NotImplementedError
+            # ============================================
+
+        if self.fit_intercept:
+            self.intercept_ = self._beta[0, 0]
+            self.coef_ = self._beta[1:, 0]
+        else:
+            self.intercept_ = 0
+            self.coef_ = self._beta.flatten()
 
         return self
 

@@ -15,7 +15,9 @@ def fattoriale(n):
     """
 
     # TODO implementare questa funzione
+    # ============== YOUR CODE HERE ==============
     raise NotImplementedError
+    # ============================================
 
 
 def fattoriale_gen():
@@ -30,4 +32,6 @@ def fattoriale_gen():
     """
 
     # TODO implementare questa funzione
+    # ============== YOUR CODE HERE ==============
     raise NotImplementedError
+    # ============================================
