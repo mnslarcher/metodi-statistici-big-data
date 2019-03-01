@@ -1,8 +1,6 @@
 def fattoriale(n):
     """Funzione fattoriale.
 
-    Vedere https://it.wikipedia.org/wiki/Fattoriale.
-
     Parameters
     ----------
     n : int
@@ -22,8 +20,6 @@ def fattoriale(n):
 
 def fattoriale_gen():
     """Sucessione dei fattoriali dei numeri interi a partire da 0.
-
-    Vedere https://it.wikipedia.org/wiki/Fattoriale.
 
     Returns
     -------

@@ -4,8 +4,6 @@ import numpy as np
 class RegressioneLineare():
     """Regressione lineare.
 
-    Vedere https://it.wikipedia.org/wiki/Regressione_lineare.
-
     Parameters
     ----------
     fit_intercept : boolean, optional, default True

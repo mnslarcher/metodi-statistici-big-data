@@ -4,8 +4,6 @@ import numbers
 def fibonacci(n):
     """Restituisce l'n-esimo numero della sucessione di Fibonacci.
 
-    Vedere https://it.wikipedia.org/wiki/Successione_di_Fibonacci.
-
     Parameters
     ----------
     n : int
@@ -30,8 +28,6 @@ def fibonacci(n):
 
 def fibonacci_gen():
     """Sucessione di Fibonacci.
-
-    Vedere https://it.wikipedia.org/wiki/Successione_di_Fibonacci.
 
     Returns
     -------
