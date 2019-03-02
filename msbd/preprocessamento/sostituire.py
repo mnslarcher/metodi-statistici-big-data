@@ -3,13 +3,13 @@ from sklearn.utils.validation import check_is_fitted
 
 
 class Sostituire(TransformerMixin):
-    """Sostituisce i valori mancanti di un DataFrame.
+    """Sostituisce i valori di un DataFrame in base a un dizionario.
 
     Parameters
     ----------
     to_replace : dict
-        Dizionario innestato, es., {'a': {'b': 'c'}}, si legge come:
-        cerca nella colonna 'a' il valore 'b' e sostituiscilo con 'c'.
+        Dizionario innestato, es., {"a": {"b": "c"}}, si legge come:
+        cerca nella colonna "a" il valore "b" e sostituiscilo con "c".
     """
     def __init__(self, to_replace):
         self.to_replace = to_replace
