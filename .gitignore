@@ -2,7 +2,9 @@ SOLUZIONE_*
 2018
 *.csv
 *.ipynb_checkpoints
+*.joblib
 *.npy
+*.pkl
 .DS_Store
 .pytest_cache
 __pycache__
