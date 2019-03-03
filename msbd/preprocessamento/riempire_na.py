@@ -15,6 +15,7 @@ class RiempireNAMedia(TransformerMixin):
         pass
 
     def fit(self, X, y=None):
+        # DataFrame.mean() ha come default numeric_only=True
         self.media_dict_ = X.mean().to_dict()
 
         return self
@@ -66,14 +67,10 @@ class RiempireNAOutletSize(TransformerMixin):
         return self
 
     def transform(self, X, y=None):
-        is_null = X["Outlet_Size"].isnull()
-        is_tier2 = X["Outlet_Location_Type"] == "Tier 2"
-        is_grocery = X["Outlet_Type"] == "Grocery Store"
-        is_type2 = X["Outlet_Type"] == "Supermarket Type2"
-        is_type3 = X["Outlet_Type"] == "Supermarket Type3"
-        X.loc[is_null & (is_tier2 | is_grocery), "Outlet_Size"] = "Small"
-        X.loc[is_null & (is_tier2 | is_grocery), "Outlet_Size"] = "Small"
-        X.loc[is_null & is_type2, "Outlet_Size"] = "Medium"
-        X.loc[is_null & is_type3, "Outlet_Size"] = "Medium"
+        # TODO: definire una trasformazione opportuna sulla base di
+        #       quanto scoperto tramite l'analisi esplorativa
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        # ============================================
 
         return X
