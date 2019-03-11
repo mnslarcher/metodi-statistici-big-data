@@ -2,7 +2,7 @@ import numbers
 
 
 def fibonacci(n):
-    """Restituisce l'n-esimo numero della sucessione di Fibonacci.
+    """Restituisce l'n-esimo numero della sucessione di Fibonacci
 
     Parameters
     ----------
@@ -27,7 +27,7 @@ def fibonacci(n):
 
 
 def fibonacci_gen():
-    """Sucessione di Fibonacci.
+    """Sucessione di Fibonacci
 
     Returns
     -------

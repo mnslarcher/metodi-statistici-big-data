@@ -2,7 +2,7 @@ import numpy as np
 
 
 class RegressioneLineare():
-    """Regressione lineare.
+    """Regressione lineare
 
     Parameters
     ----------

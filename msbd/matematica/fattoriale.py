@@ -1,5 +1,5 @@
 def fattoriale(n):
-    """Funzione fattoriale.
+    """Funzione fattoriale
 
     Parameters
     ----------
@@ -19,7 +19,7 @@ def fattoriale(n):
 
 
 def fattoriale_gen():
-    """Sucessione dei fattoriali dei numeri interi a partire da 0.
+    """Sucessione dei fattoriali dei numeri interi a partire da 0
 
     Returns
     -------

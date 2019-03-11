@@ -2,7 +2,7 @@ import numpy as np
 
 
 class ModelloLineareDinamico:
-    """Modello lineare dinamico.
+    """Modello lineare dinamico
 
     Parameters
     ----------
@@ -26,7 +26,7 @@ class ModelloLineareDinamico:
 
     @staticmethod
     def eq1(F, x, G, u, w=0):
-        """Prima equazione del modello lineare dinamico.
+        """Prima equazione del modello lineare dinamico
 
         Parameters
         ----------
@@ -60,7 +60,7 @@ class ModelloLineareDinamico:
 
     @staticmethod
     def eq2(H, x, v=0):
-        """Seconda equazione del modello lineare dinamico.
+        """Seconda equazione del modello lineare dinamico
 
         Parameters
         ----------
@@ -87,7 +87,7 @@ class ModelloLineareDinamico:
         return y
 
     def partial_fit(self, F, G, u, H, Q, R, z):
-        """Filtro di Kalman.
+        """Filtro di Kalman
 
         Parameters
         ----------
