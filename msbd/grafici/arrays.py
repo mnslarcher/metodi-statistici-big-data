@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 
 def grafico_due_vettori(a, b, figsize=(4, 4)):
-    """Grafico dei vettori a e b.
+    """Grafico dei vettori a e b
 
     Parameters
     ----------

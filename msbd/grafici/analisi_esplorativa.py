@@ -5,7 +5,7 @@ import seaborn as sns
 
 
 def grafico_barre_qualitative_risposta(X, y, qualitative, n_columns):
-    """Grafico a barre della relazione tra qualitative e risposta."""
+    """Grafico a barre della relazione tra qualitative e risposta"""
     n_var = len(qualitative)
 
     for i, var in enumerate(qualitative):
@@ -17,7 +17,7 @@ def grafico_barre_qualitative_risposta(X, y, qualitative, n_columns):
 
 
 def grafico_dispersione_quantitative_risposta(X, y, quantitative, n_columns):
-    """Grafici di dispersione tra quantitative e risposta."""
+    """Grafici di dispersione tra quantitative e risposta"""
     n_var = len(quantitative)
 
     for i, var in enumerate(quantitative):
