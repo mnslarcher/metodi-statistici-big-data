@@ -3,7 +3,7 @@ from sklearn.utils.validation import check_is_fitted
 
 
 class Sostituire(TransformerMixin):
-    """Sostituisce i valori di un DataFrame in base a un dizionario.
+    """Sostituisce i valori di un DataFrame in base a un dizionario
 
     Parameters
     ----------

@@ -4,7 +4,7 @@ import pandas as pd
 
 
 class OttenereDummy(TransformerMixin):
-    """Trasforma le variabili con dtype 'object' or 'category' in dummy.
+    """Trasforma le variabili con dtype 'object' or 'category' in dummy
 
     Parameters
     ----------

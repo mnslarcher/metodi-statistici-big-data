@@ -3,7 +3,7 @@ from sklearn.utils.validation import check_is_fitted
 
 
 class Eliminare(TransformerMixin):
-    """Elimina le colonne specificate da un DataFrame.
+    """Elimina le colonne specificate da un DataFrame
 
     Parameters
     ----------

@@ -3,7 +3,7 @@ from sklearn.utils.validation import check_is_fitted
 
 
 class RiempireNAMedia(TransformerMixin):
-    """Riempie i valori mancanti utilizzando la media.
+    """Riempie i valori mancanti utilizzando la media
 
     Attributes
     ----------
@@ -27,7 +27,7 @@ class RiempireNAMedia(TransformerMixin):
 
 
 class RiempireNAItemWeight(TransformerMixin):
-    """Riempie i valori mancanti di 'Item_Weight'.
+    """Riempie i valori mancanti di 'Item_Weight'
 
     Attributes
     ----------
@@ -57,8 +57,7 @@ class RiempireNAItemWeight(TransformerMixin):
 
 
 class RiempireNAOutletSize(TransformerMixin):
-    """Riempie i valori mancanti di 'Outlet_Size'.
-    """
+    """Riempie i valori mancanti di 'Outlet_Size'"""
     def __init__(self):
         pass
 
