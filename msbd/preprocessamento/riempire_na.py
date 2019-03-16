@@ -20,7 +20,7 @@ class RiempireNAMedia(TransformerMixin):
 
         return self
 
-    def transform(self, X, y=None):
+    def transform(self, X):
         check_is_fitted(self, "media_dict_")
 
         return X.fillna(self.media_dict_)
@@ -45,7 +45,7 @@ class RiempireNAItemWeight(TransformerMixin):
 
         return self
 
-    def transform(self, X, y=None):
+    def transform(self, X):
         check_is_fitted(self, "weight_dict_")
 
         value = {idx : self.weight_dict_.get(identifier) for idx, identifier in
@@ -65,11 +65,15 @@ class RiempireNAOutletSize(TransformerMixin):
 
         return self
 
-    def transform(self, X, y=None):
-        # TODO: definire una trasformazione opportuna sulla base di
-        #       quanto scoperto tramite l'analisi esplorativa
-        # ============== YOUR CODE HERE ==============
-        raise NotImplementedError
-        # ============================================
+    def transform(self, X):
+        is_null = X["Outlet_Size"].isnull()
+        is_tier2 = X["Outlet_Location_Type"] == "Tier 2"
+        is_grocery = X["Outlet_Type"] == "Grocery Store"
+        is_type2 = X["Outlet_Type"] == "Supermarket Type2"
+        is_type3 = X["Outlet_Type"] == "Supermarket Type3"
+        X.loc[is_null & (is_tier2 | is_grocery), "Outlet_Size"] = "Small"
+        X.loc[is_null & (is_tier2 | is_grocery), "Outlet_Size"] = "Small"
+        X.loc[is_null & is_type2, "Outlet_Size"] = "Medium"
+        X.loc[is_null & is_type3, "Outlet_Size"] = "Medium"
 
         return X

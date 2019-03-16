@@ -1,5 +1,4 @@
 from sklearn.base import TransformerMixin
-from sklearn.utils.validation import check_is_fitted
 
 
 class Eliminare(TransformerMixin):
@@ -17,6 +16,6 @@ class Eliminare(TransformerMixin):
 
         return self
 
-    def transform(self, X, y=None):
+    def transform(self, X):
 
         return X.drop(columns=self.columns)

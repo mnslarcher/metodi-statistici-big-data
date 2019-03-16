@@ -29,7 +29,7 @@ class OttenereDummy(TransformerMixin):
 
         return self
 
-    def transform(self, X, y=None):
+    def transform(self, X):
         check_is_fitted(self, "columns_")
 
         X = pd.get_dummies(X)

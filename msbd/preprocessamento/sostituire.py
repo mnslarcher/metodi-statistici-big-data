@@ -1,5 +1,4 @@
 from sklearn.base import TransformerMixin
-from sklearn.utils.validation import check_is_fitted
 
 
 class Sostituire(TransformerMixin):
@@ -18,7 +17,7 @@ class Sostituire(TransformerMixin):
 
         return self
 
-    def transform(self, X, y=None):
+    def transform(self, X):
         X.replace(self.to_replace, inplace=True)
 
         return X
