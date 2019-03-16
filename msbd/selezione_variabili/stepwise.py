@@ -1,3 +1,4 @@
+import pandas as pd
 from sklearn.base import BaseEstimator
 from sklearn.base import clone
 from sklearn.base import RegressorMixin
@@ -24,7 +25,8 @@ class Stepwise(BaseEstimator, RegressorMixin):
     valore_criterio_ : ...
 
     """
-    def __init__(self, stimatore, criterio, procedura, verboso=False):
+    def __init__(self, stimatore, criterio, procedura,
+            verboso=False):
         self.stimatore = stimatore
         self.criterio = criterio
         self.procedura = procedura
@@ -55,7 +57,7 @@ class Stepwise(BaseEstimator, RegressorMixin):
 
     def _selezione_avanti(self, X, y):
         self.variabili_selezionate_ = []
-        self._variabili_non_incluse = list(X.columns)
+        self._variabili_non_incluse = X.columns.tolist()
 
         while len(self._variabili_non_incluse) > 0:
             if self.verboso:
