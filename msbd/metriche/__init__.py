@@ -1,2 +1,2 @@
-from .metriche import gauss_aic
+from .metriche import criterio_informazione_akaike
 from .metriche import radice_errore_quadratico_medio
