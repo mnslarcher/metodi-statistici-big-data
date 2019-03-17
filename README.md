@@ -11,3 +11,4 @@
 5. [Minimi quadrati ordinari e ricorsivi con NumPy](05_minimi_quadrati_ordinari_e_ricorsivi_con_numpy.ipynb)
 6. [Modello lineare dinamico e filtro di Kalman con NumPy](06_modello_lineare_dinamico_e_filtro_di_kalman_con_numpy.ipynb)
 7. [Analisi esplorativa e preprocessamento dei dati](07_analisi_esplorativa_e_preprocessamento_dei_dati.ipynb)
+8. [Regressione stepwise, Ridge e LASSO](08_regressione_stepwise_ridge_e_lasso.ipynb)
