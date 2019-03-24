@@ -2,7 +2,7 @@ import numpy as np
 
 
 class SpiraleLogaritmica:
-    """Spirale logaritimica."""
+    """Spirale logaritimica"""
 
     def __init__(self, a, b):
         self.a = a
