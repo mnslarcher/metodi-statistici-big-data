@@ -1,6 +1,7 @@
 from .analisi_esplorativa import grafico_barre_qualitative_risposta
 from .analisi_esplorativa import grafico_dispersione_quantitative_risposta
 from .arrays import grafico_due_vettori
+from .cocktail_party import grafico_cocktail_party
 from .curva_principale import grafico_curva_principale
 from .datasets import grafico_progressione_diabete_vs_bmi
 from .pca import grafico_proiezione_sul_primo_asse_principale

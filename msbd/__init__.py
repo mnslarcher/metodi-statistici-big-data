@@ -1,3 +1,4 @@
+from . import datasets
 from . import esperimenti
 from . import grafici
 from . import hello_world
@@ -7,3 +8,4 @@ from . import modello_lineare
 from . import preprocessamento
 from . import selezione_variabili
 from . import tests
+from . import varieta
