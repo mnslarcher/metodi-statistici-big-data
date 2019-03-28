@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 
-def grafico_due_vettori(a, b, figsize=(4, 4)):
+def grafico_due_vettori(a, b):
     """Grafico dei vettori a e b
 
     Parameters
@@ -11,11 +11,7 @@ def grafico_due_vettori(a, b, figsize=(4, 4)):
 
     b : array, shape (n, )
         Vettore b.
-
-    figsize : tuple, optional, default (4, 4)
-        Dimensioni del grafico.
     """
-    plt.figure(figsize=figsize)
     plt.title("Grafico dei vettori $a$ e $b$")
     vettore_a = plt.arrow(0, 0, a[0], a[1], head_width=0.05, head_length=0.05,
         color="b")
