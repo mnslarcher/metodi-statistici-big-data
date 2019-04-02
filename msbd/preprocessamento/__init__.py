@@ -5,4 +5,5 @@ from .riempire_na import RiempireNAOutletSize
 from .ottenere_dummy import OttenereDummy
 from .standardizzare import Standardizzare
 from .sbiancare import Sbiancare
+from .sostituire import Sostituire
 from .standardizzare import Standardizzare
