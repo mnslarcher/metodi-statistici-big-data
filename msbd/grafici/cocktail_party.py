@@ -24,11 +24,11 @@ def grafico_cocktail_party(t, S, X, S_hat=None):
     if S_hat is not None:
         plt.subplot(615)
         plt.plot(t, S_hat[:, 0], color="tab:green")
-        plt.ylabel("$\hat{s}t)$")
+        plt.ylabel("$\hat{s}_1(t)$")
 
         plt.subplot(616)
         plt.plot(t, S_hat[:, 1], color="tab:green")
-        plt.ylabel("$\hat{s}(t)$")
+        plt.ylabel("$\hat{s}_2(t)$")
 
     plt.tight_layout()
     plt.subplots_adjust(top=0.9)
