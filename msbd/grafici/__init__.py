@@ -4,5 +4,11 @@ from .arrays import grafico_due_vettori
 from .cocktail_party import grafico_cocktail_party
 from .curva_principale import grafico_curva_principale
 from .datasets import grafico_progressione_diabete_vs_bmi
+from .landsat import diagrammi_scatola_baffi_classi
+from .landsat import diagrammi_scatola_baffi_pixel
+from .landsat import grafico_componenti
+from .landsat import grafico_immagine_satellitare
+from .metriche import grafico_matrice_confusione
 from .pca import grafico_proiezione_sul_primo_asse_principale
+from .pca import grafico_varianza_spiegata
 from .stimatori import grafico_coefficienti
