@@ -13,3 +13,4 @@
 7. [Analisi esplorativa e preprocessamento dei dati](07_analisi_esplorativa_e_preprocessamento_dei_dati.ipynb)
 8. [Regressione stepwise, Ridge e LASSO](08_regressione_stepwise_ridge_e_lasso.ipynb)
 9. [Componenti e curve principali](09_componenti_e_curve_principali.ipynb)
+10. [Analisi delle componenti indipendenti (ICA)](10_analisi_componenti_indipendenti.ipynb)
