@@ -2,6 +2,7 @@ from . import datasets
 from . import esperimenti
 from . import grafici
 from . import hello_world
+from . import indici
 from . import matematica
 from . import metriche
 from . import modello_lineare
