@@ -4,6 +4,9 @@ from .arrays import grafico_due_vettori
 from .cocktail_party import grafico_cocktail_party
 from .curva_principale import grafico_curva_principale
 from .datasets import grafico_progressione_diabete_vs_bmi
+from .importanza import grafico_importanza_variabili
+from .iperparametri import grafico_metrica_iperparametro
+from .iperparametri import grafico_metrica_iperparametri
 from .landsat import diagrammi_scatola_baffi_classi
 from .landsat import diagrammi_scatola_baffi_pixel
 from .landsat import grafico_componenti
