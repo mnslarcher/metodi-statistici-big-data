@@ -9,7 +9,7 @@ class CocktailParty:
         self.A = A
 
     def s1(self, t):
-        return 2 * np.sin(math.pi * t / 7)
+        return 2 * np.sin(math.pi * t / 8)
 
     def s2(self, t):
         return 1 / 5 * (t % (5 * 4 + 1)) - 2
