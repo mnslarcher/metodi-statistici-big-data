@@ -14,3 +14,4 @@
 8. [Regressione stepwise, Ridge e LASSO](08_regressione_stepwise_ridge_e_lasso.ipynb)
 9. [Componenti e curve principali](09_componenti_e_curve_principali.ipynb)
 10. [Analisi delle componenti indipendenti (ICA)](10_analisi_componenti_indipendenti.ipynb)
+12. [Analisi discriminate](12_analisi_discriminate.ipynb)
