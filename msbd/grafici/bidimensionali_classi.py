@@ -12,7 +12,7 @@ def grafico_bidimensionale_classi(X, y, alpha=None, s=None, cm=plt.cm.tab10):
 
 def grafico_bidimensionale_classi_previste(X_train, y_train, X_val, y_val,
         y_pred, nome_clf, alpha=1., s=75, cm=plt.cm.tab10):
-    plt.title("Accuratezza {}: {:.2f}%".format(nome_clf, 100 *
+    plt.title("Classi previste (accuratezza {}: {:.2f}%)".format(nome_clf, 100 *
         accuracy_score(y_val, y_pred)))
 
     grafico_bidimensionale_classi(X_train, y_train, alpha=alpha / 3, s=s / 3,
