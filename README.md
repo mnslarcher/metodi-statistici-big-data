@@ -16,3 +16,4 @@
 10. [Analisi delle componenti indipendenti (ICA)](10_analisi_componenti_indipendenti.ipynb)
 11. [Alberi di decisione](11_alberi_di_decisione.ipynb)
 12. [Analisi discriminate](12_analisi_discriminate.ipynb)
+13. [Analisi del sentimento](13_analisi_del_sentimento.ipynb)
