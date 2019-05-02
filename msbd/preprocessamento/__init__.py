@@ -7,3 +7,4 @@ from .standardizzare import Standardizzare
 from .sbiancare import Sbiancare
 from .sostituire import Sostituire
 from .standardizzare import Standardizzare
+from .tweet_analyzer import tweet_analyzer
