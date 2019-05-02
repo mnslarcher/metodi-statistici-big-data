@@ -13,6 +13,8 @@ from .landsat import diagrammi_scatola_baffi_classi
 from .landsat import diagrammi_scatola_baffi_pixel
 from .landsat import grafico_componenti
 from .landsat import grafico_immagine_satellitare
+from .metriche import grafico_curva_precisione_richiamo
+from .metriche import grafico_curva_roc
 from .metriche import grafico_matrice_confusione
 from .pca import grafico_proiezione_sul_primo_asse_principale
 from .pca import grafico_varianza_spiegata
