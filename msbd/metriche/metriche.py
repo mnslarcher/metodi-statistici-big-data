@@ -49,3 +49,115 @@ def criterio_informazione_akaike(stimatore, X, y, distribuzione="normale"):
             distribuzione))
 
     return 2 * k - 2 * logl
+
+
+class MetricheClassificazione:
+    @staticmethod
+    def n_negativi(y_true, y_pred):
+        n = (y_true == 0).sum()
+
+        return n
+
+    @staticmethod
+    def n_positivi(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        p = None
+        # ============================================
+
+        return p
+
+    @staticmethod
+    def n_previsti_negativi(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        pn = None
+        # ============================================
+
+        return pn
+
+    @staticmethod
+    def n_previsti_positivi(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        pp = None
+        # ============================================
+
+        return pp
+
+    @staticmethod
+    def n_veri_negativi(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        vn = None
+        # ============================================
+
+        return vn
+
+    @staticmethod
+    def n_falsi_positivi(y_true, y_pred):
+        fp = ((y_true != y_pred) & (y_pred == 1)).sum()
+
+        return fp
+
+    @staticmethod
+    def n_falsi_negativi(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        fn = None
+        # ============================================
+
+        return fn
+
+    @staticmethod
+    def n_veri_positivi(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        vp = None
+        # ============================================
+
+        return vp
+
+    @staticmethod
+    def tasso_falsi_positivi(y_true, y_pred):
+        fp = MetricheClassificazione.n_falsi_positivi(y_true, y_pred)
+        n = MetricheClassificazione.n_negativi(y_true, y_pred)
+        tfp = fp / n
+
+        return tfp
+
+    @staticmethod
+    def tasso_veri_positivi(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        tvp = None
+        # ============================================
+
+        return tvp
+
+    @staticmethod
+    def precisione(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        pr = None
+        # ============================================
+
+        return pr
+
+    @staticmethod
+    def richiamo(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        rc = None
+        # ============================================
+
+        return rc
+
+    @staticmethod
+    def punteggio_f1(y_true, y_pred):
+        # ============== YOUR CODE HERE ==============
+        raise NotImplementedError
+        f1 = None
+        # ============================================
+
+        return f1
