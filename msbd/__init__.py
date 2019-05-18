@@ -7,6 +7,7 @@ from . import matematica
 from . import metriche
 from . import modello_lineare
 from . import preprocessamento
+from . import scraping
 from . import selezione_variabili
 from . import tests
 from . import varieta
