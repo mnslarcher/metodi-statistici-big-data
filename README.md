@@ -17,3 +17,4 @@
 11. [Alberi di decisione](11_alberi_di_decisione.ipynb)
 12. [Analisi discriminate](12_analisi_discriminate.ipynb)
 13. [Analisi del sentimento](13_analisi_del_sentimento.ipynb)
+14. [Analisi delle reti sociali](14_analisi_delle_reti_sociali.ipynb)
