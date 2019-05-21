@@ -1,1 +1,4 @@
 from .scraping import ottieni_contenuto_url
+from .scraping import ottieni_contenuto_urls_sequenziale
+from .scraping import ottieni_contenuto_urls_multiprocessing
+from .scraping import ottieni_contenuto_urls_threading
