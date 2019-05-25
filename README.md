@@ -18,4 +18,4 @@
 12. [Analisi discriminate](12_analisi_discriminate.ipynb)
 13. [Analisi del sentimento](13_analisi_del_sentimento.ipynb)
 14. [Analisi delle reti sociali](14_analisi_delle_reti_sociali.ipynb)
-15. [Calcolo parallelo](14_calcolo_parallelo.ipynb)
+15. [Calcolo parallelo](15_calcolo_parallelo.ipynb)
