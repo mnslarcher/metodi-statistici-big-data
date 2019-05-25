@@ -33,15 +33,15 @@ def ottieni_contenuto_url(url, coda=None, verboso=True):
         print("[FINE]\nURL: {}\nID processo: {}\nNome processo: {}\nNome"
         "thread: {}\n".format(url, id_processo, nome_processo, nome_thread))
 
-    if coda is not None:
-        coda.put(testo)
-    else:
+    if coda is None:
         return testo
+    else:
+        coda.put(testo)
 
 
 def ottieni_contenuto_urls_sequenziale(urls, verboso=True):
     # ============== YOUR CODE HERE ==============
-    contenuti = [ottieni_contenuto_url(url, verboso=verboso) for url in urls]
+    raise NotImplementedError
     # ============================================
 
     return contenuti
@@ -66,18 +66,7 @@ def ottieni_contenuto_urls_threading(urls, verboso=True):
 
 def ottieni_contenuto_urls_multiprocessing(urls, verboso=True):
     # ============== YOUR CODE HERE ==============
-    coda = mp.Queue()
-
-    processi = [mp.Process(target=ottieni_contenuto_url, args=(url,),
-        kwargs={"coda": coda, "verboso": verboso}) for url in urls]
-
-    for p in processi:
-        p.start()
-
-    contenuti = [coda.get() for p in processi]
-
-    for p in processi:
-        p.join() # blocca il MainThread finché p non è completato
+    raise NotImplementedError
     # ============================================
 
     return contenuti
